@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header navbar">
-        <div class="brand"><a href="#" target="_self">Nova</a></div>
-        <nav class="nav">
+    <header class="header">
+        <h1 class="brand">
+            <a href="/">Nova</a>
+        </h1>
+        <nav class="nav" aria-label="Main Navigation">
             <a href="#">New In</a>
             <a href="#">Jewelry</a>
             <a href="#">Bags</a>
@@ -19,18 +21,24 @@
             <a href="#">Accessories</a>
         </nav>
         <div class="icons">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            <i class="fa-regular fa-circle-user"></i>
+            <a href="#" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Cart">
+                <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Account">
+                <i class="fa-regular fa-circle-user" aria-hidden="true"></i>
+            </a>
         </div>
     </header>
 
     <section class="hero">
         <div class="hero-section">
             <p class="hero-subtitle">New Collection</p>
-            <h1 class="hero-title">
+            <h2 class="hero-title">
                 Elevate Your <br>
-                Style</h1>
+                Style</h2>
             <p class="hero-text">Timeless accessories <br> for women</p>
             <a href="#" class="hero-btn">Shop Now</a>
         </div>
@@ -40,38 +48,130 @@
         <article class="category-card">
             <img src="image/Jewellery.png" alt="JEWELRY" class="image">
             <h3>JEWELRY</h3>
-            <a href="#">SHOP NOW<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">SHOP NOW
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </article>
         <article class="category-card">
             <img src="image/bagss.png" alt="Bags" class="image">
             <h3>BAGS</h3>
-            <a href="#">SHOP NOW<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">SHOP NOW
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </article>
         <article class="category-card">
             <img src="image/watch.png" alt="Watches" class="image">
             <h3>WATCHES</h3>
-            <a href="#">SHOP NOW<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">SHOP NOW
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </article>
         <article class="category-card">
-            <img src="image/sunglass.png
-            " alt="Sunglasses" class="image">
+            <img src="image/sunglass.png" alt="Sunglasses" class="image">
             <h3>SUNGLASSES</h3>
-            <a href="#">SHOP NOW<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">SHOP NOW
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </article>
         <article class="category-card">
-            <img src="image/acces.png" alt="Accesories" class="image">
-            <h3>ACCESORIES</h3>
-            <a href="#">SHOP NOW<i class="fa-solid fa-arrow-right"></i></a>
+            <img src="image/acces.png" alt="Accessories" class="image">
+            <h3>ACCESSORIES</h3>
+            <a href="#">SHOP NOW
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </article>
     </section>
 
     <section class="collection">
         <div class="collection-heading">
             <h2>SHOP OUR COLLECTION</h2>
-            <span></span>
+            <div class="heading-line"></div>
         </div>
 
-
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="tag">NEW</div>
+            <a href="#"><img src="image/necklace.png" alt="Gold Minimal Pendant" loading="lazy"></a>
+            <div class="product-meta">
+              <div>
+                <a href="#">Gold Minimal Pendant</a>
+                <span class="price">$49.00</span>
+              </div>
+              <button class="wishlist-btn" aria-label="Add Gold Minimal Pendant to wishlist">♡</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="tag">NEW</div>
+            <a href="#"><img src="image/ShoulderBag.png" alt="Classic Shoulder Bag" loading="lazy"></a>
+            <div class="product-meta">
+              <div>
+                <a href="#">Classic Shoulder Bag</a>
+                <span class="price">$89.00</span>
+              </div>
+              <button class="wishlist-btn" aria-label="Add Classic Shoulder Bag to wishlist">♡</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="tag">NEW</div>
+            <a href="#"><img src="image/RoseGoldWatch.webp" alt="Rose Gold Watch" loading="lazy"></a>
+            <div class="product-meta">
+              <div>
+                <a href="#">Rose Gold Watch</a>
+                <span class="price">$129.00</span>
+              </div>
+              <button class="wishlist-btn" aria-label="Add Rose Gold Watch to wishlist">♡</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#"><img src="image/ChicSunglass.png" alt="Chic Square Sunglasses" loading="lazy"></a>
+            <div class="product-meta">
+              <div>
+                <a href="#">Chic Square Sunglasses</a>
+                <span class="price">$69.00</span>
+              </div>
+              <button class="wishlist-btn" aria-label="Add Chic Square Sunglasses to wishlist">♡</button>
+            </div>
+          </article>
+        </div>
     </section>
+
+    <section class="benefits" aria-label="Store Benefits">
+        <article>
+            <div class="benefit-icon">
+                <i class="fa-solid fa-truck" aria-hidden="true"></i>
+            </div>
+          <div>
+            <h3>FREE SHIPPING</h3>
+            <p>On orders over $50</p>
+          </div>
+        </article>
+        <article>
+            <div class="benefit-icon">
+                <i class="fa-solid fa-rotate-left"></i>
+            </div>
+          <div>
+            <h3>EASY RETURNS</h3>
+            <p>14-day return policy</p>
+          </div>
+        </article>
+        <article>
+          <div class="benefit-icon"><i class="fa-solid fa-lock"></i></div>
+          <div>
+            <h3>SECURE PAYMENT</h3>
+            <p>100% secure checkout</p>
+          </div>
+        </article>
+        <article>
+          <div class="benefit-icon"><i class="fa-solid fa-headset"></i></div>
+          <div>
+            <h3>CUSTOMER SUPPORT</h3>
+            <p>We're here to help</p>
+          </div>
+        </article>
+      </section>
+
+    <footer class="footer">
+        <p><i class="fa-regular fa-copyright"></i> 2026 Nova. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
