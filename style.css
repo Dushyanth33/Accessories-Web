@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif; 
     overflow-x: hidden;  
@@ -360,6 +364,10 @@ a {
 .wishlist-btn:hover{
     color: #a9876f;
     transform: scale(1.15);
+}
+
+.wishlist-btn.active {
+    color: crimson;
 }
 
 @media(max-width:1200px){
